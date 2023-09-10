@@ -3,9 +3,7 @@ import app from './app';
 
 dotenv.config();
 // Configurações da porta do servidor
-const port = process.env.PORT || 8080;
+const port = process.env.APP_PORT;
 
 // Listando a porta que o servidor está rodando
-app.listen(port, () => {
-  console.log(`Server running on port: ${port}`);
-});
+app.listen(port);
